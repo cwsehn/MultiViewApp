@@ -19,7 +19,7 @@
     
     [self.aButton setTitle:@"Press Me!" forState:UIControlStateNormal];
     
-    [self.aButton setTintColor:[UIColor redColor]];
+    
 
 }
 
@@ -29,10 +29,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)buttonPressed {
-    self.view.backgroundColor = [UIColor orangeColor];
+
     
     
-}
+
 
 @end
