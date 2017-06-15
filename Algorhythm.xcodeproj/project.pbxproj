@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		139329011EF2DF2800C88467 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 139329001EF2DF2800C88467 /* main.m */; };
 		139329041EF2DF2800C88467 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 139329031EF2DF2800C88467 /* AppDelegate.m */; };
-		139329071EF2DF2800C88467 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 139329061EF2DF2800C88467 /* ViewController.m */; };
+		139329071EF2DF2800C88467 /* PlaylistMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 139329061EF2DF2800C88467 /* PlaylistMasterViewController.m */; };
 		1393290A1EF2DF2800C88467 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139329081EF2DF2800C88467 /* Main.storyboard */; };
 		1393290C1EF2DF2800C88467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1393290B1EF2DF2800C88467 /* Assets.xcassets */; };
 		1393290F1EF2DF2800C88467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1393290D1EF2DF2800C88467 /* LaunchScreen.storyboard */; };
+		139329181EF2E83500C88467 /* PlaylistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 139329171EF2E83500C88467 /* PlaylistDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		139329001EF2DF2800C88467 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		139329021EF2DF2800C88467 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		139329031EF2DF2800C88467 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		139329051EF2DF2800C88467 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		139329061EF2DF2800C88467 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		139329051EF2DF2800C88467 /* PlaylistMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaylistMasterViewController.h; sourceTree = "<group>"; };
+		139329061EF2DF2800C88467 /* PlaylistMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaylistMasterViewController.m; sourceTree = "<group>"; };
 		139329091EF2DF2800C88467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1393290B1EF2DF2800C88467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1393290E1EF2DF2800C88467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		139329101EF2DF2800C88467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		139329161EF2E83500C88467 /* PlaylistDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistDetailViewController.h; sourceTree = "<group>"; };
+		139329171EF2E83500C88467 /* PlaylistDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +63,10 @@
 			children = (
 				139329021EF2DF2800C88467 /* AppDelegate.h */,
 				139329031EF2DF2800C88467 /* AppDelegate.m */,
-				139329051EF2DF2800C88467 /* ViewController.h */,
-				139329061EF2DF2800C88467 /* ViewController.m */,
+				139329051EF2DF2800C88467 /* PlaylistMasterViewController.h */,
+				139329061EF2DF2800C88467 /* PlaylistMasterViewController.m */,
+				139329161EF2E83500C88467 /* PlaylistDetailViewController.h */,
+				139329171EF2E83500C88467 /* PlaylistDetailViewController.m */,
 				139329081EF2DF2800C88467 /* Main.storyboard */,
 				1393290B1EF2DF2800C88467 /* Assets.xcassets */,
 				1393290D1EF2DF2800C88467 /* LaunchScreen.storyboard */,
@@ -151,7 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				139329071EF2DF2800C88467 /* ViewController.m in Sources */,
+				139329071EF2DF2800C88467 /* PlaylistMasterViewController.m in Sources */,
+				139329181EF2E83500C88467 /* PlaylistDetailViewController.m in Sources */,
 				139329041EF2DF2800C88467 /* AppDelegate.m in Sources */,
 				139329011EF2DF2800C88467 /* main.m in Sources */,
 			);

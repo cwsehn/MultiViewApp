@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PlaylistDetailViewController.h
 //  Algorhythm
 //
 //  Created by Chris William Sehnert on 6/15/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PlaylistDetailViewController : UIViewController
 
 @end
-
