@@ -21,20 +21,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R5v-Ni-6mp">
+                                <rect key="frame" x="87" y="233" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Igt-eP-GvZ"/>
+                                    <constraint firstAttribute="height" constant="200" id="acZ-EO-6JU"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEi-Yz-fy3">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <rect key="frame" x="164" y="441" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="XEz-Uw-w9L" kind="push" identifier="ShowPlaylistDetail" id="Gch-GH-qee"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.3540178571" green="0.73543526790000002" blue="0.74718191960000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TEi-Yz-fy3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AXw-gc-IUK"/>
-                            <constraint firstItem="TEi-Yz-fy3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eU9-3r-wLN"/>
+                            <constraint firstItem="R5v-Ni-6mp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0U2-Ch-wXU"/>
+                            <constraint firstItem="TEi-Yz-fy3" firstAttribute="top" secondItem="R5v-Ni-6mp" secondAttribute="bottom" constant="8" id="X1x-uB-cIQ"/>
+                            <constraint firstItem="R5v-Ni-6mp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z7i-rw-aHV"/>
+                            <constraint firstItem="TEi-Yz-fy3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mHB-UC-Zla"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="gnf-9V-fT2"/>
