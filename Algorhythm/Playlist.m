@@ -69,7 +69,7 @@
     The individual elements of the "playlistDictionary" are then accesible through 
         property dot notation......
  
-            ex. NSString *title = newPlist.kTitle;
+            ex. NSString *title = newPlist.playlistTitle;
  
 */
 
