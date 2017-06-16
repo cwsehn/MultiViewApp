@@ -8,6 +8,7 @@
 
 #import "PlaylistMasterViewController.h"
 #import "PlaylistDetailViewController.h"
+#import "Playlist.h"
 
 @interface PlaylistMasterViewController ()
 
@@ -19,6 +20,9 @@
     [super viewDidLoad];
     
     [self.aButton setTitle:@"Press Me!" forState:UIControlStateNormal];
+    
+    Playlist *playlist = [[Playlist alloc]initWithIndex:0];
+    self.playlistImageView0.image = playlist.playlistIcon;
     
     
 
