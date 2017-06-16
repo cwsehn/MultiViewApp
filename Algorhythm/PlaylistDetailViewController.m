@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (self.playlist){
-        self.buttonPressLabel.text = self.playlist.playlistTitle;
+       
     }
 }
 

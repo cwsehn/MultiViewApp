@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -37,7 +38,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="R5v-Ni-6mp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0U2-Ch-wXU"/>
                             <constraint firstItem="TEi-Yz-fy3" firstAttribute="top" secondItem="R5v-Ni-6mp" secondAttribute="bottom" constant="8" id="X1x-uB-cIQ"/>
@@ -67,36 +68,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0x-TA-37K">
-                                <rect key="frame" x="68" y="323" width="238" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u9s-Pk-aHL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="u9s-Pk-aHL" secondAttribute="height" multiplier="75:58" id="S4w-0O-zrB"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ldn-ZA-fEB">
+                                <rect key="frame" x="0.0" y="264" width="375" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEv-f6-XyN">
+                                        <rect key="frame" x="20" y="10" width="119" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoj-fG-7Ib">
+                                        <rect key="frame" x="20" y="39" width="335" height="42.5"/>
+                                        <string key="text">This is a collection of my favorite songs to listen to when working out. It's got everything from fast cardio to power workout tunes. All the right fuel to get your engine going.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ldn-ZA-fEB" secondAttribute="height" multiplier="25:6" id="DEE-zK-eUh"/>
+                                    <constraint firstItem="zoj-fG-7Ib" firstAttribute="top" secondItem="TEv-f6-XyN" secondAttribute="bottom" constant="8" id="P2W-uI-nCW"/>
+                                    <constraint firstItem="zoj-fG-7Ib" firstAttribute="leading" secondItem="Ldn-ZA-fEB" secondAttribute="leading" constant="20" id="dTg-5f-6iP"/>
+                                    <constraint firstAttribute="trailing" secondItem="zoj-fG-7Ib" secondAttribute="trailing" constant="20" id="hXe-i9-dLi"/>
+                                    <constraint firstItem="TEv-f6-XyN" firstAttribute="leading" secondItem="Ldn-ZA-fEB" secondAttribute="leading" constant="20" id="pNB-sR-84v"/>
+                                    <constraint firstItem="TEv-f6-XyN" firstAttribute="top" secondItem="Ldn-ZA-fEB" secondAttribute="top" constant="10" id="tAi-nb-zkZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="E0x-TA-37K" firstAttribute="centerX" secondItem="Nbr-Ht-llt" secondAttribute="centerX" id="UNe-lG-xzx"/>
-                            <constraint firstItem="E0x-TA-37K" firstAttribute="centerY" secondItem="Nbr-Ht-llt" secondAttribute="centerY" id="dak-sm-cvH"/>
+                            <constraint firstAttribute="trailing" secondItem="u9s-Pk-aHL" secondAttribute="trailing" id="4aD-5X-QWB"/>
+                            <constraint firstAttribute="trailing" secondItem="Ldn-ZA-fEB" secondAttribute="trailing" id="PBH-9i-brr"/>
+                            <constraint firstItem="Ldn-ZA-fEB" firstAttribute="bottom" secondItem="u9s-Pk-aHL" secondAttribute="bottom" id="VNs-Ia-dSY"/>
+                            <constraint firstItem="u9s-Pk-aHL" firstAttribute="top" secondItem="xBb-2A-jTV" secondAttribute="bottom" id="pmw-sd-5iH"/>
+                            <constraint firstItem="u9s-Pk-aHL" firstAttribute="leading" secondItem="Nbr-Ht-llt" secondAttribute="leading" id="sIi-yZ-Z6z"/>
+                            <constraint firstItem="Ldn-ZA-fEB" firstAttribute="leading" secondItem="Nbr-Ht-llt" secondAttribute="leading" id="tFf-07-09e"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="EbZ-hB-Tle"/>
-                    <connections>
-                        <outlet property="buttonPressLabel" destination="E0x-TA-37K" id="H6r-fk-daK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhe-wv-kYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1183.5" y="152.5"/>
+            <point key="canvasLocation" x="1283.5" y="152.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hDZ-u5-eCG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eu2-y1-2EF" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L9E-dN-czZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="L9E-dN-czZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
