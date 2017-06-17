@@ -39,11 +39,21 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqual:@"ShowPlaylistDetail"]){
-        PlaylistDetailViewController *playlistDetailController = (PlaylistDetailViewController *)segue.destinationViewController;
-        playlistDetailController.playlist = [[Playlist alloc]initWithIndex:0];
+        
+        // this is the sender object retrieved from the "gesture" action....
+        UIImageView *playlistImageView = (UIImageView *)[sender view];
+        
+        if ([self.playlistImageViews containsObject:playlistImageView]) {
+            NSUInteger index = [self.playlistImageViews indexOfObject:playlistImageView];
+            
+            
+            PlaylistDetailViewController *playlistDetailController = (PlaylistDetailViewController *)segue.destinationViewController;
+            playlistDetailController.playlist = [[Playlist alloc]initWithIndex:index];
+        }
     }
 }
-    
+
+// This method is the "gesture" action fired by tapping on "sender" object....
 - (IBAction)showPlaylistsDetail:(id)sender {
     [self performSegueWithIdentifier:@"ShowPlaylistDetail" sender:sender];
 }
