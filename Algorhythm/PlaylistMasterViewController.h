@@ -10,8 +10,8 @@
 
 @interface PlaylistMasterViewController : UIViewController
 
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *playlistImageViews;
 
-@property (weak, nonatomic) IBOutlet UIImageView *playlistImageView0;
 
 
 @end
