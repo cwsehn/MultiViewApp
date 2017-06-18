@@ -25,7 +25,6 @@
                         <subviews>
                             <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="R5v-Ni-6mp">
                                 <rect key="frame" x="1" y="65" width="204" height="222"/>
-                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="WWp-vT-gFZ" appends="YES" id="hca-Z6-cBF"/>
@@ -33,27 +32,22 @@
                             </imageView>
                             <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="vEG-gU-htm">
                                 <rect key="frame" x="209" y="65" width="204" height="222"/>
-                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Ez4-T1-qDH">
                                 <rect key="frame" x="1" y="513" width="204" height="222"/>
-                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="W6T-wl-7PB">
                                 <rect key="frame" x="209" y="513" width="204" height="222"/>
-                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="JoF-Rm-YWp">
                                 <rect key="frame" x="1" y="289" width="204" height="222"/>
-                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="H89-tf-xtL">
                                 <rect key="frame" x="209" y="289" width="204" height="222"/>
-                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                             </imageView>
                         </subviews>
@@ -92,6 +86,11 @@
                     <navigationItem key="navigationItem" title="Playlists" id="gnf-9V-fT2"/>
                     <connections>
                         <outletCollection property="playlistImageViews" destination="R5v-Ni-6mp" id="dSw-CE-DUe"/>
+                        <outletCollection property="playlistImageViews" destination="vEG-gU-htm" id="sGC-6N-2Km"/>
+                        <outletCollection property="playlistImageViews" destination="JoF-Rm-YWp" id="YAG-Nx-ZFx"/>
+                        <outletCollection property="playlistImageViews" destination="H89-tf-xtL" id="FhG-ZT-uO7"/>
+                        <outletCollection property="playlistImageViews" destination="Ez4-T1-qDH" id="UhQ-hl-LgK"/>
+                        <outletCollection property="playlistImageViews" destination="W6T-wl-7PB" id="NsH-Hp-a6c"/>
                         <segue destination="XEz-Uw-w9L" kind="push" identifier="ShowPlaylistDetail" id="QFF-Ps-ddY"/>
                     </connections>
                 </viewController>
